@@ -16,7 +16,10 @@
   "devDependencies": {
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
+    "concurrently": "^2.2.0",
     "deep-freeze-node": "^1.1.2",
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.4.0",
     "live-server": "^1.0.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
@@ -24,7 +27,10 @@
   "scripts": {
     "test": "node ./node_modules/browserify/bin/cmd.js test/test.js -t [ babelify --presets [ es2015 react ] ] | node | tap-spec",
     "webpack": "node node_modules/webpack/bin/webpack.js --progress --colors --watch",
-    "serve": "./node_modules/.bin/live-server ./build"
+    "serve": "./node_modules/.bin/live-server ./build",
+    "dev": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run webpack\" \"npm run serve\"",
+    "jsdoc-actions": "./node_modules/.bin/jsdoc --configure docs/config/action.config.json --verbose",
+    "serve-docs": "./node_modules/.bin/live-server ./docs"
   },
   "author": "Hendrik Wallbaum <mail@hendrikwallbaum.de>"
 }
