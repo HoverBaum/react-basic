@@ -1,3 +1,5 @@
+[![Project Status: Inactive - The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+
 A very simple application inverting a texts colors.
 
 This is mainly build to illustrate React and Redux based development for a blogpost. Read it at:
