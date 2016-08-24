@@ -1,7 +1,7 @@
 A very simple application inverting a texts colors.
 
 This is mainly build to illustrate React and Redux based development for a blogpost. Read it at:
-`link soon TM`
+http://hoverbaum.gitlab.io/2016/07/21/Why-and-how-to-ReactJS/
 
 To see it in action clone this Repo, cd into it and `npm install`. After that all the script in `package.json` are available to you.
 
